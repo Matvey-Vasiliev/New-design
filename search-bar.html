@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>АвтоЗапчасти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="search-bar-parent">
+    <div class="search-bar-child">
+        <div class="vin-model">
+            <div class="button-holder">
+                <div class="search-vin">
+                    <p>Поиск по VIN</p>
+                </div>
+                <div class="search-artikul">
+                    <p>Поиск по артикулу</p>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="search" itemscope itemtype="https://schema.org/WebSite">
+                <meta itemprop="url" content="https://autozapchasti.ru"> <!-- ВВЕСТИ ДОМЕН САЙТА -->
+                <form action="" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+                    <meta itemprop="target" content="https://autozapchasti.ru/search?q={search_term_string}" /><!-- ВВЕСТИ ДОМЕН САЙТА ПЕРЕД SEARCH -->
+                    <input type="text" class="search-text" itemprop="query-input" name="search_term_string" required >
+                    <input type="submit" class="search-submit" value="искать >>>">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
